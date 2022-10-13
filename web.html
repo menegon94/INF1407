@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <link rel="stylesheet" href="mystyle.css">
+    <div style="text-align:center" class="container">
+    <label  >INF1047 - Gabriel Menegon e Henrique Soares - Jogo de Penney<br><br></label>
+    </div>
+        <div id="divLogin"  class="container">
+            
+            <input id="email" type="text" placeholder="Coloque seu Email aqui" name="email" required>
+            <button id="btnLogin">Login</button>
+        </div>
+        <div style="text-align:center" id="divInicio"  class="container">
+            <label >Deseja ser o primeiro a escolher? <br></label>
+            <input id="Sim" type="radio" name="radioInicio" value="Sim" checked="checked"><label for="Sim" >Sim</label>
+            <input id="Nao" type="radio" name="radioInicio" value="Nao"><label for="Nao">Não</label>
+            <button id="btnInicio">Escolher</button>
+        </div>
+        <div style="text-align:center" id="divJ1"  class="container">
+            <label >Escolha a ordem de lançamento: <br><br></label>
+            <label >Moeda 1: </label><select id="S2Jogada1"><option value="1">Cara</option><option value="0">Coroa</option></select><br>
+            <label >Moeda 2: </label><select id="S2Jogada2"><option value="1">Cara</option><option value="0">Coroa</option></select><br>
+            <label >Moeda 3: </label><select id="S2Jogada3"><option value="1">Cara</option><option value="0">Coroa</option></select><br><br>
+            <button id="btnJ1">Escolher sequência</button>
+        </div>
+        <div style="text-align:center" id="divJ2"  class="container">
+
+            <label >Jogada do Computador: <br><br></label>
+            <label >Moeda 1: </label> <label id="S3JogadaC1"></label><br>
+            <label >Moeda 2: </label><label id="S3JogadaC2"></label><br>
+            <label >Moeda 3: </label><label id="S3JogadaC3"></label><br><br>
+            <label >Escolha a ordem de lançamento: <br><br></label>
+            <label >Moeda 1: </label><select id="S3Jogada1"><option value="1">Cara</option><option value="0">Coroa</option></select><br>
+            <label >Moeda 2: </label><select id="S3Jogada2"><option value="1">Cara</option><option value="0">Coroa</option></select><br>
+            <label >Moeda 3: </label><select id="S3Jogada3"><option value="1">Cara</option><option value="0">Coroa</option></select><br><br>
+            <button id="btnJ2">Escolher sequência</button>
+        </div>
+        <div style="text-align:center" id="divGame"  class="container">
+
+            <label >Sequência do Jogador: <br></label>
+            <img id= "S4Jogada1" src="" width="60" height="75"/><img id= "S4Jogada2" src="" width="60" height="75"/><img id= "S4Jogada3" src="" width="60" height="75"/><br><br><br>
+            <label >Sequência do Computador: <br></label>
+            <img id= "S4JogadaC1" src="" width="60" height="75"/><img id= "S4JogadaC2" src="" width="60" height="75"/><img id= "S4JogadaC3" src="" width="60" height="75"/><br><br><br>
+            <label >Sequência do Jogo: <br></label>
+            <img id= "S4JogadaG1" src="" /><img id= "S4JogadaG2" src="" /><img id= "S4JogadaG3" src="" /><br><br><br><br><br><br>
+            <button id="jogaMoeda">Lançar moeda!</button><br><br>
+
+
+        </div>
+</body>
+<script src="script.js"></script>
+</html>
+
